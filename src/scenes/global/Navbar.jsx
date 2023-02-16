@@ -37,7 +37,7 @@ const Navbar = () => {
       >
         <Box
           onClick={() => navigate("/")}
-          sx={{ $hover: { cursor: "pointer" } }}
+          sx={{ '&:hover': { cursor: "pointer" } }}
           color={shades.secondary[500]}
         >
           <Typography variant='h3'>Born Again Style</Typography>

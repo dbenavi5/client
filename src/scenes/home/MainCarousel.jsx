@@ -27,12 +27,14 @@ const MainCarousel = () => {
       renderArrowPrev={(onClickHandler, hasPrev, label) => (
         <IconButton
           onClick={onClickHandler}
-          position="absolute"
-          top="50%"
-          left="0"
-          color="white"
-          padding="5px"
-          zindex="10"
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "0",
+            color: "white",
+            padding: "5px",
+            zIndex: "10",
+          }}
         >
           <NavigateBeforeIcon sx={{ fontSize: 40 }} />
         </IconButton>
@@ -40,12 +42,14 @@ const MainCarousel = () => {
       renderArrowNext={(onClickHandler, hasNext, label) => (
         <IconButton
           onClick={onClickHandler}
-          position="absolute"
-          top="50%"
-          right="0"
-          color="white"
-          padding="5px"
-          zindex="10"
+          sx={{
+            position: "absolute",
+            top: "50%",
+            right: "0",
+            color: "white",
+            padding: "5px",
+            zIndex: "10",
+          }}
         >
           <NavigateNextIcon sx={{ fontSize: 40 }} />
         </IconButton>
